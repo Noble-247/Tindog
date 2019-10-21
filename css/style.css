@@ -1,0 +1,198 @@
+:root {
+    --primary-color: #3e64ff;
+    --secondary-color: #fff;
+    --optional-color: #6e8af8;
+}
+
+
+/* TITLE SECTION */
+
+
+/* header#title,
+nav {
+    background-color: var(--primary-color);
+} */
+
+header {
+    padding-bottom: 20px;
+}
+
+.sticky-top {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.nav-item {
+    font-size: 1.1rem;
+    padding: 0px 20px;
+    text-align: right;
+}
+
+.nav-link {
+    padding: 10px 20px;
+}
+
+.title-content {
+    padding-top: 5%;
+}
+
+.title-content h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: var(--secondary-color);
+}
+
+.download-button {
+    margin: 5% 3% 5% 0%;
+}
+
+.title-image {
+    width: 45%;
+    min-width: 150px;
+    max-width: 250px;
+    position: absolute;
+    transform: rotate(25deg);
+    z-index: 0;
+    /* transform: translateX(50%); */
+}
+
+
+/* FEATURE SECTION */
+
+#feature {
+    background-color: var(--secondary-color);
+    position: relative;
+    z-index: 1;
+}
+
+.feature-container {
+    padding: 5%
+}
+
+.fa-color {
+    color: var(--primary-color);
+}
+
+.fa-color:hover {
+    color: var(--optional-color);
+}
+
+
+/* TESTIMONIAL SECTION */
+
+#testimonial-slider_press {
+    background-image: url(/images/background.jpeg);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.testimonial-slider_press {
+    background-color: rgba(39, 61, 151, 0.7);
+}
+
+.slider-paragraph {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: bolder;
+    padding: 10px 100px 50px;
+}
+
+.slider-image {
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 100px;
+}
+
+
+/* PRESS SECTION */
+
+#press {
+    padding-bottom: 25px;
+}
+
+.press-image {
+    width: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* PRICING SECTION */
+
+section#pricing {
+    padding: 50px 20px;
+}
+
+.pricing-title {
+    padding-bottom: 25px;
+}
+
+
+/* DOWNLOAD SECTION */
+
+.call-to-action_downloads {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: bolder;
+    padding: 50px 100px 20px;
+    margin-bottom: 0px;
+}
+
+.call-to-action_download-button {
+    margin: 3% 3% 3% 0%;
+}
+
+
+/* CONTACT SECTION */
+
+#contact-us {
+    padding: 50px 5px;
+}
+
+footer {
+    padding: 10px 5px;
+}
+
+footer p {
+    margin: 0px;
+}
+
+@media (max-width: 1000px) {
+    /* HEADER SECTION */
+    .title-content h1 {
+        text-align: center;
+    }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+        /* transform: translateX(100%); */
+    }
+    .button {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    /* HEADER SECTION */
+    .title-content h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    /* TESTIMONIAL SECTION */
+    .slider-paragraph {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+    /* DOWNLOAD SECTION */
+    .call-to-action_downloads {
+        font-size: 1.7rem;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
