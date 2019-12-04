@@ -20,10 +20,11 @@ body {
 /* TITLE SECTION */
 
 header {
+    padding-top: 100px;
     padding-bottom: 20px;
 }
 
-.sticky-top {
+.fixed-top {
     padding-top: 10px;
     padding-bottom: 10px;
 }
