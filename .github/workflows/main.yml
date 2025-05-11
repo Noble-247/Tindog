@@ -1,18 +1,25 @@
 on: push
+
 name: 🚀 Deploy website on push
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
+
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
-    
-    - name: 📂 Sync files
+
+    - name: 📂 Sync files via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.ceap-department-blog.great-site.net
+        server: ftpupload.net
         username: ${{ secrets.FTPUSERNAME }}
         password: ${{ secrets.FTPPASSWORD }}
         protocol: ftps
         server-dir: public_html/Tindog/
+        local-dir: ./  # optional, defaults to repo root
+        dangerous-clean-slate: false  # true = deletes everything before deploy
+
+        
